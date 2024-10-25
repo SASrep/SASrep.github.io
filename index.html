@@ -9,8 +9,30 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <div style="background-color: white; z-index: 8; position: fixed; width: 100vw; height: 5rem;"></div>
-    <section style="position: fixed; top: 2rem; left: 3rem; z-index: 10; display: flex; flex-direction: row; gap: 1.5rem;">
+    <div style="position: fixed; bottom: 2rem; left: 3rem"><p id="timestamp" style="opacity: 0.2;"></p></div>
+    <p style="text-align: end; z-index: 10; position: fixed; top: 2rem; right: 3rem; opacity: 0.2;">Guillaume Tritsch</p>
+    <div
+      style="
+        background-color: white;
+        z-index: 8;
+        position: fixed;
+        top: 0px;
+        width: 100vw;
+        height: 5rem;
+      "
+    ></div>
+    <section
+      style="
+        position: fixed;
+        top: 2rem;
+        left: 3rem;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        opacity: 0.9;
+      "
+    >
       <section
         style="
           border: #1e1e1e solid;
@@ -19,10 +41,12 @@
           border-width: 0 2px 0 2px;
         "
       >
-        <div id="filler" style="height: 100%; background-color: #1e1e1e"></div>
+        <div id="filler" style="height: 70%; background-color: #1e1e1e"></div>
       </section>
       <p id="perc">44%</p>
       <p id="speed">5px/s</p>
+      <p > Estimated time remaining : <span id="event"></span> seconds</p>
+      
     </section>
     <section class="arrow">
       <button onclick="scrollTopFunction()">
@@ -57,16 +81,16 @@
       </button>
     </section>
     <article class="pos1">
-      <section>
-        <h1 style="color: #282828">Evolution de mon utilisation des réseaux sociaux</h1>
+      <section style="margin-top: 4rem;">
+        <h1 style="color: #282828">Statistification_</h1>
       </section>
     </article>
     <article class="pos1 dark">
       <section class="animate">
         <p>
-          <b>Au collège</b>, je m’intéresse principalement, si ce n’est que, aux
-          jeux vidéo. À mes yeux, les réseaux sociaux sont avant tout un moyen
-          de communication plus qu’un moyen de divertissement à part entière. Ce
+          Au collège, je m’intéresse principalement, si ce n’est que, aux jeux
+          vidéo. À mes yeux, les réseaux sociaux sont avant tout un moyen de
+          communication plus qu’un moyen de divertissement à part entière. Ce
           qui explique pourquoi je n’y prête que très peu d’intérêt pendant
           longtemps. Je commence donc à utiliser Skype, pour parler et jouer
           avec des amis du collège. C’est notre principalement moyen de
@@ -94,17 +118,17 @@
           négative des gens qui utilise ces applications. En fait, je vois ces
           applications au travers du regard de mes parents, des médias et des
           adultes en général, grand critique de cette débauche aux vues, au
-          paraitre, et à l’oisiveté. Je ne m’y intéresse définitivement pas. Il
-          me semble que c’est durant cette période que TikTok devient populaire
-          en France, je finis par être pris de curiosité et décide de
-          l’installer. Très vite désinstaller, car peu convaincu de l’utilité.
-          Je passe de plus en plus de temps sur mon ordinateur, mon réseau
-          d’amis s’étend, et dépasse les murs du lycée. Cette chance vient de
-          quelqu’un ayant rejoint le même établissement que moi, et ayant fait
-          son collège en Grèce. Grâce à lui, je rencontre des personnes de
-          différentes origines. Et notre intérêt commun pour l’histoire
-          contemporaine nous rassemble. Je leur parle tous les soirs et les
-          longues sessions de jeu restent un excellent souvenir de cette
+          paraitre, et à l’oisiveté. <br />Je ne m’y intéresse définitivement
+          pas. <br />Il me semble que c’est durant cette période que TikTok
+          devient populaire en France, je finis par être pris de curiosité et
+          décide de l’installer. Très vite désinstaller, car peu convaincu de
+          l’utilité. <br />Je passe de plus en plus de temps sur mon ordinateur,
+          mon réseau d’amis s’étend, et dépasse les murs du lycée. Cette chance
+          vient de quelqu’un ayant rejoint le même établissement que moi, et
+          ayant fait son collège en Grèce. Grâce à lui, je rencontre des
+          personnes de différentes origines. Et notre intérêt commun pour
+          l’histoire contemporaine nous rassemble. Je leur parle tous les soirs
+          et les longues sessions de jeu restent un excellent souvenir de cette
           période, qui durera tout le lycée.
         </p>
       </section>
@@ -261,10 +285,12 @@
         <section>
           <p>
             Aujourd’hui, mon utilisation d’Instagram reste élevée.
-            <br /><br />
-            En comparaison : Le temps d’utilisation journalier moyen d’Instagram
-            en France est de 53 minutes, Mon temps d’utilisation journalier
-            moyen sur les 10 derniers jours est de 100 minutes.
+            <br />
+            <br />Le temps d’utilisation journalier moyen d’Instagram en France
+            est de 53 minutes.<br />
+            <br />
+            Mon temps d’utilisation journalier moyen sur les 10 derniers jours
+            est de 100 minutes.
           </p>
         </section>
       </section>
@@ -280,10 +306,11 @@
         <section>
           <p>
             Je réalise, en faisant ces statistiques, à quel point Instagram
-            prend de la place sur mon temps, car contrairement à Netflix ou
-            YouTube, tu ne peux pas utiliser Instagram en faisant autre chose en
-            même temps. Ces 16 heures sont donc vraiment perdues, soit 7% de mon
-            temps sur ces 10 jours.
+            prends une place importante sur mon temps, car contrairement à
+            Netflix ou YouTube, Instagram nécessite des actions régulières, nous
+            empêchant de l'utiliser en parallèle d'une autre activité. <br />
+            Ces 16 heures sont donc vraiment perdues, soit 7% de mon temps sur
+            ces 10 jours.
           </p>
         </section>
       </section>
@@ -296,12 +323,9 @@
           diverses créations artistiques que je réalise, en 3D, en
           programmation, en dessin, en maquettisme, ou toute autre forme d’art.
           Toutefois, une diminution du temps d’utilisation est à envisager.
-          <br />
+          <br /><br>
           J’aurais été surpris, il y a quelques années, si j’avais su
-          qu’Instagram prendrait une part aussi importante de mon temps, alors
-          que, je me souviens, en Terminal, avoir impressionné quelques
-          personnes en annonçant n’avoir jamais installé ce réseau social. Les
-          choses évoluent vite, parfois de manière imprévisible.
+          qu’Instagram prendrait une part aussi importante de mon temps alors que je trouvais cette application si inutile, une perte de temps au profit d'une vitrine plastique de la société.
         </p>
       </section>
     </article>

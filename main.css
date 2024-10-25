@@ -48,7 +48,7 @@ h3 {
 .pos2 > section {
     margin-left: 12vw;
     width: 76vw;
-    padding-top: 25vh;
+    padding-top: 15vh;
 }
 
 .arrow {
@@ -101,6 +101,9 @@ article.pos2 > section img {
     height: auto;
     width: 100%;
 }
+article.pos2 > section h3 {
+    text-align: center;
+}
 
 article.pos2 > section > section {
     display: flex;
@@ -111,4 +114,11 @@ article.pos2 > section > section {
 
 #speed, #perc, #remain {
     font-family: "PT Mono";
+}
+
+#event {
+    
+    overflow: hidden; /* make sure it hides the content that overflows */
+    white-space: nowrap; /* don't break the line */
+    text-overflow: ellipsis; /* give the beautiful '...' effect */
 }

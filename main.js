@@ -111,7 +111,6 @@ setTimeout(() => {
     0;
 
   setInterval(() => {
-    console.log("eeeee");
     const scrollTop =
       window.pageYOffset ||
       document.documentElement.scrollTop ||
@@ -131,3 +130,31 @@ setTimeout(() => {
     posY = scrollTop;
   }, 100);
 }, 10);
+
+
+setTimeout(() => {
+  
+  var height = Math.max(
+    document.body.scrollHeight,
+    document.body.offsetHeight,
+  );
+
+  setInterval(() => {
+
+    
+    const scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop ||
+        0;
+  
+  
+    document.getElementById("event").innerText = Math.round( (performance.now() / 1000) * (height - scrollTop - window.innerHeight)  / scrollTop);
+  
+  }, 1000);
+  
+}, 100);
+
+setInterval(() => {
+  document.getElementById("timestamp").innerText = new Date().toLocaleString();
+}, 1000);
