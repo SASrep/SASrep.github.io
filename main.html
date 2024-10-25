@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div style="background-color: white; z-index: 8; position: fixed; width: 100vw; height: 5rem;"></div>
+    <section style="position: fixed; top: 2rem; left: 3rem; z-index: 10; display: flex; flex-direction: row; gap: 1.5rem;">
+      <section
+        style="
+          border: #1e1e1e solid;
+          width: 25rem;
+          height: 1.3rem;
+          border-width: 0 2px 0 2px;
+        "
+      >
+        <div id="filler" style="height: 100%; background-color: #1e1e1e"></div>
+      </section>
+      <p id="perc">44%</p>
+      <p id="speed">5px/s</p>
+    </section>
+    <section class="arrow">
+      <button onclick="scrollTopFunction()">
+        <span class="material-symbols-rounded">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="M440-647 244-451q-12 12-28 11.5T188-452q-11-12-11.5-28t11.5-28l264-264q6-6 13-8.5t15-2.5q8 0 15 2.5t13 8.5l264 264q11 11 11 27.5T772-452q-12 12-28.5 12T715-452L520-647v447q0 17-11.5 28.5T480-160q-17 0-28.5-11.5T440-200v-447Z"
+            />
+          </svg>
+        </span>
+      </button>
+      <button onclick="scrollDown()">
+        <span class="material-symbols-rounded">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="M440-313v-447q0-17 11.5-28.5T480-800q17 0 28.5 11.5T520-760v447l196-196q12-12 28-11.5t28 12.5q11 12 11.5 28T772-452L508-188q-6 6-13 8.5t-15 2.5q-8 0-15-2.5t-13-8.5L188-452q-11-11-11-27.5t11-28.5q12-12 28.5-12t28.5 12l195 195Z"
+            />
+          </svg>
+        </span>
+      </button>
+    </section>
+    <article class="pos1">
+      <section>
+        <h1 style="color: #282828">Evolution de mon utilisation des réseaux sociaux</h1>
+      </section>
+    </article>
+    <article class="pos1 dark">
+      <section class="animate">
+        <p>
+          <b>Au collège</b>, je m’intéresse principalement, si ce n’est que, aux
+          jeux vidéo. À mes yeux, les réseaux sociaux sont avant tout un moyen
+          de communication plus qu’un moyen de divertissement à part entière. Ce
+          qui explique pourquoi je n’y prête que très peu d’intérêt pendant
+          longtemps. Je commence donc à utiliser Skype, pour parler et jouer
+          avec des amis du collège. C’est notre principalement moyen de
+          communication, car, habitant tous loin du collège, nous ne pouvons pas
+          facilement nous voir en dehors des cours. Durant ma scolarité, je n’ai
+          jamais été un élève brillant, je faisais le minimum pour passer
+          l’année et, dès les cours terminés, je rentrais chez moi pour parler,
+          jouer et rire avec des amis le reste de la soirée. Comme vous l’aurez
+          peut-être compris, je suis loin d’être l’enfant populaire du collège,
+          et ça m’allait très bien ainsi. J’obtiens le brevet sans trop de
+          difficulté, je rentre donc en seconde et obtiens mon premier téléphone
+          portable. À partir de là, mon utilisation de YouTube augmente, je
+          commence à regarder des vidéos dans les transports en commun, le soir
+          avant de me coucher … Lentement, le téléphone prend, dans mon
+          quotidien, la place du livre ou de la BD.
+        </p>
+      </section>
+    </article>
+    <article class="pos1">
+      <section class="animate">
+        <p>
+          Au lycée, tout le monde à un téléphone. J’entends les termes Snapchat
+          et Instagram de plus en plus souvent. Mais je ne m’y intéresse pas :
+          je vois ça comme inutile, prenant du temps, et ai une vision assez
+          négative des gens qui utilise ces applications. En fait, je vois ces
+          applications au travers du regard de mes parents, des médias et des
+          adultes en général, grand critique de cette débauche aux vues, au
+          paraitre, et à l’oisiveté. Je ne m’y intéresse définitivement pas. Il
+          me semble que c’est durant cette période que TikTok devient populaire
+          en France, je finis par être pris de curiosité et décide de
+          l’installer. Très vite désinstaller, car peu convaincu de l’utilité.
+          Je passe de plus en plus de temps sur mon ordinateur, mon réseau
+          d’amis s’étend, et dépasse les murs du lycée. Cette chance vient de
+          quelqu’un ayant rejoint le même établissement que moi, et ayant fait
+          son collège en Grèce. Grâce à lui, je rencontre des personnes de
+          différentes origines. Et notre intérêt commun pour l’histoire
+          contemporaine nous rassemble. Je leur parle tous les soirs et les
+          longues sessions de jeu restent un excellent souvenir de cette
+          période, qui durera tout le lycée.
+        </p>
+      </section>
+    </article>
+    <article class="pos2">
+      <section class="animate">
+        <section>
+          <h3>Mon nombre de messages Discord envoyés par an</h3>
+          <img src="Images/1.png" />
+        </section>
+        <section>
+          <p>
+            En milieu d’année 2018, je remplace Skype par Discord, un réseau
+            social centré sur le jeu vidéo qui a rapidement pris une place
+            importante du marché. En seconde, je découvre le développement
+            informatique grâce au cours de mathématique. Je commence à beaucoup
+            programmer sur mon temps libre, au point d’installer une application
+            pour programmer sur portable. En première, je rejoins la filière
+            STI2D, une filière plus technologique dans laquelle je vais
+            apprendre la modélisation d’objet technique pour l’usinage, un peu
+            de programmation, un peu d’architecture, et quelques autres
+            domaines.
+          </p>
+        </section>
+      </section>
+    </article>
+    <article class="pos1">
+      <section class="animate">
+        <p>
+          Le covid arrive, entrainant plusieurs confinements successifs, la
+          quantité de cours réduit, mon temps sur les écrans augmente, mon temps
+          de jeu explose. Paradoxalement, le confinement me rapproche de mes
+          amis, on discute plus souvent, plus longtemps. Je tisse même de
+          nouvelles relations avec des gens que n’ait jamais vu en dehors de
+          Discord : c’est la joie des réseaux sociaux. En terminal, je choisis
+          l’option architecture, mon lycée n’ayant pas l’option informatique.
+          Ces cours, surtout techniques, sur la résistance des matériaux, la
+          transmission de chaleur et la solidité d’une structure, m’intéressent
+          vraiment. J’obtiens le « bac covid » sans trop de problèmes. Durant
+          les vacances d’été suivant son obtention, je quitte Besançon pour
+          déménager au Pays basque.
+        </p>
+      </section>
+    </article>
+    <article class="pos1">
+      <section class="animate">
+        <p>
+          J’enchaine sur un BUT Informatique, une formation professionnalisante
+          en trois ans. Là-bas, je rejoins sur un coup de tête une équipe qui
+          postule pour devenir BDE. Nous sommes élues, nous deviendrons amis
+          pour le reste de la formation. Je finis par m’éloigner de mon groupe
+          d’amis du lycée à cause de quelques disputes. Cela peut se voir à la
+          baisse de message sur Discord sur le graphique précédent. Ayant obtenu
+          le permis et ayant à disposition une voiture que mes parents me
+          prêtent, je suis autonome dans mes déplacements, le réseau de bus de
+          la région étant assez mauvais pour les longs trajets. Cette autonomie
+          est particulièrement utile, puisque mon école est un peu loin de la
+          maison de mes parents, et tous mes amis viennent de direction opposée.
+          Cela est d’autant plus utile quand, en seconde année, je rejoins en
+          alternance une entreprise se trouvant à mi-chemin de mon école et mon
+          lieu de vie. Cette liberté me permet de voir mes amis plus facilement,
+          Discord prend donc une place moindre dans ma vie. C’est également en
+          BUT informatique que j’installe Instagram, avant tout comme moyen de
+          communication, et probablement aussi dans l’objectif de sociabiliser
+          plus facilement après ce déménagement.
+        </p>
+      </section>
+    </article>
+    <article class="pos2">
+      <section class="animate">
+        <section>
+          <h3>Mon nombre de recherches YouTube par an depuis 2014</h3>
+          <img src="Images/2.png" />
+        </section>
+        <section>
+          <p>
+            Pendant longtemps, Instagram reste une application que j’utilise
+            peu. Mon utilisation de Discord baisse et je passe de moins en moins
+            de temps sur les jeux vidéo. Je commence à apprendre sur mon temps
+            libre la modélisation 3 et de nouveau langage de programmation. Sur
+            le graphique ci-dessous, un pic de mes recherches YouTube est
+            visible à partir de 2024, je pense que cela est partiellement due
+            aux différentes recherches que je fais pour apprendre Blender, le
+            logiciel permettant de réaliser de la 3D.
+          </p>
+        </section>
+      </section>
+    </article>
+
+    <article class="pos1">
+      <section class="animate">
+        <p>
+          Je finis par m’intéresser aux « reels », une fonctionnalité
+          d’Instagram, copié de TikTok, et reprenant un fonctionnement accusé
+          d’addictif. Une quantité infinie de courte vidéo imprévisible et de
+          tout genre, donnant toujours envie d’en voir plus. Mon temps
+          d’utilisation d’Instagram augmente considérablement. Avec mes amis, on
+          s’envoie les reels entre nous, que ce soit pour rire, critiquer,
+          positivement ou négativement, ou pour toute autre raison. Plus
+          globalement, mes loisirs changent : je sors plus régulièrement, je
+          reste dans le hall de mon école pour discuter jusqu’à tard le soir, et
+          nous allons souvent manger en ville. Cette vie, plus onéreuse que ce
+          que j’ai connu jusqu’à maintenant, et surtout due à mon salaire
+          d’alternant, qui me permet de mettre de côté, toute en faisant de
+          nombreuses activités. J’avais également la chance de ne pas payer de
+          loyer, étant encore chez mes parents.
+        </p>
+      </section>
+    </article>
+    <article class="pos1">
+      <section class="animate">
+        <p>
+          En dernière année de BUT, mon utilisation d’Instagram a évolué : j'y
+          passe désormais beaucoup de temps, mais de manière moins
+          conventionnelle. J'ai pris l'habitude de lire les commentaires sous
+          chaque "reel", surtout lorsqu'il s'agit de sujets politiques, et de
+          consulter les profils des personnes qui les publient. Cette curiosité,
+          qui peut paraitre étrange, vise surtout à chercher des liens entre les
+          opinions de la personne et le contenu de son compte. Il faut admettre
+          que c’est plus proche de la sociologie de bas étage qu’a une vraie
+          étude de société. Je crois que j’ai toujours eu un penchant pour les
+          statistiques et la sociologie. Ça m’arrive parfois de passer une heure
+          ou deux à lire un rapport de l’IFOP sur un sujet qui m’intéresse.
+        </p>
+      </section>
+    </article>
+    <article class="pos2">
+      <section class="animate">
+        <section>
+          <h3>Nombre de commentaires Instagram que j’ai « liké » par mois</h3>
+          <img src="Images/3.png" />
+        </section>
+        <section>
+          <p>
+            Le graphique ci-dessous montre à quel point j’ai pris l’habitude de
+            lire des commentaires Instagram, car, durant le mois d’aout, j’ai
+            ajouté une mention j’aime un peu plus de 1200 commentaires, soit 40
+            par jour. Cela montre également mon utilisation intensive
+            d’Instagram. Heureusement, le rythme semble redescendre sur la fin,
+            ce qui peut montrer une diminution de mon temps d’utilisation.
+          </p>
+        </section>
+      </section>
+    </article>
+    <article class="pos2">
+      <section class="animate">
+        <section>
+          <h3>
+            Heures d’utilisation de différentes applications sur les 10 derniers
+            jours
+          </h3>
+          <img src="Images/4.png" />
+        </section>
+        <section>
+          <p>
+            Aujourd’hui, mon utilisation d’Instagram reste élevée.
+            <br /><br />
+            En comparaison : Le temps d’utilisation journalier moyen d’Instagram
+            en France est de 53 minutes, Mon temps d’utilisation journalier
+            moyen sur les 10 derniers jours est de 100 minutes.
+          </p>
+        </section>
+      </section>
+    </article>
+    <article class="pos2">
+      <section class="animate">
+        <section>
+          <h3>
+            Répartition des différentes activités sur les 10 derniers jours
+          </h3>
+          <img src="Images/5.png" />
+        </section>
+        <section>
+          <p>
+            Je réalise, en faisant ces statistiques, à quel point Instagram
+            prend de la place sur mon temps, car contrairement à Netflix ou
+            YouTube, tu ne peux pas utiliser Instagram en faisant autre chose en
+            même temps. Ces 16 heures sont donc vraiment perdues, soit 7% de mon
+            temps sur ces 10 jours.
+          </p>
+        </section>
+      </section>
+    </article>
+    <article class="pos1">
+      <section class="animate">
+        <p>
+          Aujourd’hui, je ne pense pas arrêter complètement Instagram, je
+          réfléchis même à ouvrir un compte qui me permettrait de partager
+          diverses créations artistiques que je réalise, en 3D, en
+          programmation, en dessin, en maquettisme, ou toute autre forme d’art.
+          Toutefois, une diminution du temps d’utilisation est à envisager.
+          <br />
+          J’aurais été surpris, il y a quelques années, si j’avais su
+          qu’Instagram prendrait une part aussi importante de mon temps, alors
+          que, je me souviens, en Terminal, avoir impressionné quelques
+          personnes en annonçant n’avoir jamais installé ce réseau social. Les
+          choses évoluent vite, parfois de manière imprévisible.
+        </p>
+      </section>
+    </article>
+    <article class="pos2">
+      <section class="animate">
+        <section>
+          <h3>Chaines YouTube auxquelles je suis abonné par catégorie</h3>
+          <img src="Images/6.png" />
+        </section>
+        <section>
+          <p>
+            Je me suis également intéressé à ma différence d’utilisation
+            d’Instagram et de YouTube. Pour cela, j’ai catégorisé les chaines
+            YouTube et compte Instagram auxquels je suis abonné. J’utilise
+            YouTube principalement pour le divertissement, cette catégorie
+            représentant plus de 50% des chaines auxquels je suis abonné. La
+            seconde catégorie représente les documentaires.
+          </p>
+        </section>
+      </section>
+    </article>
+    <article class="pos1">
+      <section class="animate">
+        <p>
+          Lors du covid, mon nombre de visionnages de documentaire à énormément
+          augmenté, principalement venant d’Arte, je pouvais regarder jusqu’à
+          trois documentaires dans la même journée. Cette consommation de
+          documentaire est probablement excessive, car il m’était impossible de
+          retenir une telle quantité d’information. Mais je ne regardais pas
+          vraiment pour apprendre, regarder des documentaires sur l’histoire, la
+          géopolitique, la technologie, ou les sujets de société m’intéressaient
+          et étaient une source de divertissement à mes yeux.
+        </p>
+      </section>
+    </article>
+    <article class="pos2">
+      <section class="animate">
+        <section>
+          <h3>Comptes Instagram auxquels je suis abonné par catégorie</h3>
+          <img src="Images/7.png" />
+        </section>
+        <section>
+          <p>
+            Le contenu que je consomme sur Instagram est un peu différent. On
+            peut déjà remarquer le peu de comptes que je suis sur Instagram,
+            cela est juste une habitude que je n’ai jamais prise.
+          </p>
+        </section>
+      </section>
+    </article>
+    <article class="pos1">
+      <section class="animate">
+        <p>
+          Je m’informe principalement sur Instagram, parmi les quelques médias
+          que je suis se trouve également un journal anglophone : le New York
+          Times. J’ai commencé à suivre ce journal pour trois raisons : avoir un
+          point de vue extérieur sur la politique française, avoir plus
+          d’information sur la politique états-unienne et m’améliorer en
+          anglais. J’ai choisi ce journal, car il est considéré comme presse de
+          référence ce qui montre normalement une certaine qualité. La
+          différence de contenu avec nos médias français est également assez
+          intéressante à remarquer, surtout en cette période d’élection aux
+          États-Unis.
+        </p>
+      </section>
+    </article>
+  </body>
+</html>

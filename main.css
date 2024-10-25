@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+@font-face {
+    font-family: circularStdLight;
+    src: url(Fonts/CircularStd-Light.otf);
+}
+
+@font-face {
+    font-family: circularStd;
+    src: url(Fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: circularStdBold;
+    src: url(Fonts/CircularStd-Bold.otf);
+}
+article {
+    height: calc(100vh + 20px);
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: "PT Mono";
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 600;
+    font-family: circularStd;
+}
+
+.sub-title {
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: "PT Mono";
+}
+
+.pos1 > section {
+    margin-left: 25vw;
+    width: 50vw;
+    padding-top: 25vh;
+}
+
+.pos2 > section {
+    margin-left: 12vw;
+    width: 76vw;
+    padding-top: 25vh;
+}
+
+.arrow {
+    position:fixed;
+    z-index: 2;
+    bottom: 2em;
+    right: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.arrow > button {
+    border-radius: 100%;
+    background-color: rgb(65, 65, 65);
+    height: 4em;
+    width: 4em;
+    border: none;
+    transition: all 0.1s;
+}
+
+.arrow > button:hover {
+    background-color: rgba(128, 128, 128, 0.654);
+
+  cursor: pointer;
+}
+
+p {
+    font-family: circularStdLight;
+    letter-spacing: 0px;
+    line-height: 25px;
+
+}
+
+b {
+    font-family: circularStdBold;
+}
+
+article > section {
+    transition: all 1s;
+}
+
+article.pos2 > section {
+    display: grid;
+    gap: 10rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+article.pos2 > section img {
+    height: auto;
+    width: 100%;
+}
+
+article.pos2 > section > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+#speed, #perc, #remain {
+    font-family: "PT Mono";
+}
